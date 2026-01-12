@@ -1,0 +1,142 @@
+/*Завдання №1*/
+.hw-card1 {
+  width: 300px;
+  background: #f1e1e1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hw-card1:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/*Завдання №2*/
+.hw-btn2 {
+  background: #172718;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+}
+.hw-btn2:hover {
+  background-color: rgb(127, 118, 182);
+  transform: translateY(-5px);
+}
+.hw-btn2:active {
+  transform: scale(0.95);
+}
+
+/*Завдання №3*/
+.hw-link3 {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Псевдоелемент — лінія */
+.hw-link3::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  right: 0; /* вирівнюємо до правого краю */
+  width: 100%;
+  height: 2px;
+  background: #000;
+  transform: scaleX(0);
+  transform-origin: right; /* початок анімації справа */
+  transition: transform 0.3s ease;
+}
+/* При hover лінія розтягується */
+.hw-link3:hover::after {
+  transform: scaleX(1);
+}
+
+/*Завдання №1*/
+@keyframes fadeMove {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+.box {
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #f1e1e1;
+  animation-name: fadeMove;
+  animation-duration: 2s;
+}
+
+/*Завдання №2*/
+@keyframes moveBack {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.box-1 {
+  text-align: center;
+  border-radius: 5px;
+  width: 40px;
+  height: 30px;
+  background-color: burlywood;
+  animation-name: moveBack;
+  animation-duration: 1.5s;
+  animation-direction: reverse;
+}
+
+/*Завдання №3*/
+.btn2 {
+  background-color: #f1e1e1;
+}
+@keyframes hoverEffect {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.btn2:hover {
+  animation-name: hoverEffect;
+  animation-duration: 0.5s;
+}
+
+/*Завдання №4*/
+@keyframes comboEffect {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+<!--Завдання №4-- > .card {
+  background-color: #000;
+  text-align: center;
+  border-radius: 5px;
+  width: 60px;
+  height: 40px;
+  color: beige;
+  animation-name: comboEffect;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
