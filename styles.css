@@ -98,45 +98,4 @@
   animation-direction: reverse;
 }
 
-/*Завдання №3*/
-.btn2 {
-  background-color: #f1e1e1;
-}
-@keyframes hoverEffect {
-  0% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(1.1);
-  }
-}
-
-.btn2:hover {
-  animation-name: hoverEffect;
-  animation-duration: 0.5s;
-}
-
-/*Завдання №4*/
-@keyframes comboEffect {
-  0% {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-<!--Завдання №4-- > .card {
-  background-color: #000;
-  text-align: center;
-  border-radius: 5px;
-  width: 60px;
-  height: 40px;
-  color: beige;
-  animation-name: comboEffect;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
+/*Test #1*/
